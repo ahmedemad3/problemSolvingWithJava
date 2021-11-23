@@ -1,1 +1,1 @@
-# problemSolvinWithJava
+# problemSolvingWithJava
