@@ -12,7 +12,7 @@ public class LargestSmallestInArray {
     private static void findLargestAndSmallestInArray(int[] input) {
 
         // Time is O(N) space is O(1)
-        
+
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
 
