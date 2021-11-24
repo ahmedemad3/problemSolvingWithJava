@@ -15,6 +15,8 @@ public class CountElement {
 
 
     private static void calculateElements(int[] arr) {
+
+        // time complexity is O(N) Space is O(n)
         int length = arr.length;
         Set<Integer> set = new HashSet<>();
         for (int i = 0; i < length; i++) {

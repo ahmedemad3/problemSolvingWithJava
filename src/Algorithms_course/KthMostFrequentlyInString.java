@@ -15,8 +15,9 @@ public class KthMostFrequentlyInString {
         // hashmap
         // order descending
         // based on Kth get the relevant
+        // Time is O(N) space is O(N)
 
-        TreeMap<Character , Integer> treeMap = new TreeMap<>();
+        Map<Character , Integer> treeMap = new HashMap<>();
         int length = input.length();
         for (int i = 0; i < length; i++) {
             char ch = input.charAt(i);
@@ -27,6 +28,10 @@ public class KthMostFrequentlyInString {
             }
         }
 
+//        treeMap.forEach((character, integer) -> {
+//            System.out.println("Key : " + character + " , val : " + integer);
+//        });
+
         List<Map.Entry> list = new ArrayList<>(treeMap.entrySet());
         Collections.sort(list, new Comparator<Map.Entry>() {
             @Override
@@ -36,6 +41,11 @@ public class KthMostFrequentlyInString {
                 return val2.compareTo(val1);
             }
         });
+
+//        list.forEach(entry -> {
+//            System.out.println("Key : " + entry.getKey() + " , val : " + entry.getValue());
+//        });
+
         if(list.size() > k )
             return (Character)list.get(k).getKey();
         return null;

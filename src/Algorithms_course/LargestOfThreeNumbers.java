@@ -12,6 +12,8 @@ public class LargestOfThreeNumbers {
     }
 
     private static int findLargestOfThreeNumbers(int[] arr) {
+
+        // Time is O(N) space is O(1)
         int max = Integer.MIN_VALUE;
         for (int i = 0; i < arr.length; i++) {
             if(arr[i] > max)

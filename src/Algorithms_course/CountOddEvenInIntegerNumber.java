@@ -6,9 +6,27 @@ public class CountOddEvenInIntegerNumber {
         int number = 123;
 //        countOddEven(number);
         countOddEvenV2(number);
+        System.out.println(reverseNumber(number));
     }
 
+    private static Integer reverseNumber(int number) {
+
+        // Time is O(N) Space is O(N)
+        if(number == 0 ) return number;
+        String reverseNumber = "";
+        while (number > 0 ){
+            int remaining = number % 10;
+            reverseNumber = reverseNumber + remaining;
+            number = number / 10;
+        }
+
+        return Integer.valueOf(reverseNumber);
+    }
+
+
     private static void countOddEvenV2(int number) {
+
+        // Time is O(N) Space is O(1)
         int evenCount = 0;
         int oddCount = 0;
         while (number > 0 ){
@@ -26,6 +44,8 @@ public class CountOddEvenInIntegerNumber {
     }
 
     private static void countOddEven(int number) {
+
+        // Time is O(N) Space is O(N)
         String even = "";
         String input = String.valueOf(number);
         for (int i = 0; i < input.length(); i++) {

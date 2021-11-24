@@ -10,6 +10,8 @@ public class CheckYearLeap {
 
     private static void isYearLeap(int year) {
 
+        // time complexity is O(1) space is O(1)
+
         if(year % 4 == 0)
             System.out.println("year is leap");
         else

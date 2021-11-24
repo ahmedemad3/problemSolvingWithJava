@@ -16,6 +16,8 @@ public class DuplicateInArray {
 
         // map and count and if count more than 1 it's duplicate
 
+        // Time is O(N) space is O(N)
+
         Map<Integer , Integer> map = new HashMap<>();
         for (int i = 0; i < input.length; i++) {
             if(map.containsKey(input[i])){

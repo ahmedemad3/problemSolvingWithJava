@@ -28,6 +28,8 @@ public class FirstNonRepeatingCharacter {
     }
 
     private static Character getFirstNonRepeatingCharacterV3(String input) {
+
+        // Time is O(n) space O(n)
         int length = input.length();
         for (int i = 0; i < length; i++) {
             if(input.indexOf(input.charAt(i)) == input.lastIndexOf(input.charAt(i))){
@@ -38,6 +40,8 @@ public class FirstNonRepeatingCharacter {
     }
 
     private static Character getFirstNonRepeatingCharacterV2(String input) {
+
+        // Time is O(n) space O(n)
         Map<Character , Integer> map = new HashMap<>();
         int length = input.length();
         for (int i = 0; i < length; i++) {

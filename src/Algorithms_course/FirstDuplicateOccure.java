@@ -13,6 +13,8 @@ public class FirstDuplicateOccure {
     }
 
     private static int getFirstDuplicateInArray(int[] input) {
+
+        // Time is O(n) space is O(N)
         int length = input.length;
         Set<Integer> set = new HashSet<>();
         for (int i = 0; i < length; i++) {

@@ -9,6 +9,8 @@ public class CountCharactersInEachWordInString {
 
     private static void countCharactersInEachWord(String input) {
 
+        // time complexity is O(n) space is O(n) ==> String
+
         String[] splitter = input.split(" ");
         for (int i = 0; i < splitter.length; i++) {
             char[] elements = splitter[i].toCharArray();

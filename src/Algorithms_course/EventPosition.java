@@ -12,6 +12,8 @@ public class EventPosition {
     }
 
     private static void printEventPosition(int[] arr) {
+
+        // Time is O(N) space is O(1)
         for (int i = 0; i < arr.length; i++) {
                 if(i % 2 == 0)
                     System.out.println(arr[i]);

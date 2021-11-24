@@ -8,6 +8,7 @@ public class FloydsTriangle {
     }
 
     private static void drawFloydsTriangle(int number) {
+        // Time O(n2) space o(1)
         int numberOfRows = number/2;
         int k = 1;
         for (int i = 1; i <= numberOfRows ; i++) {

@@ -10,6 +10,8 @@ public class CountNumberOfDigitInInteger {
     }
 
     private static int countNumberOfDigitV2(Integer number) {
+
+        // time complexity is O(n) space is O(1)
         int count = 0;
         while (number > 0){
             number = number/10;
@@ -19,6 +21,7 @@ public class CountNumberOfDigitInInteger {
     }
 
     private static int countNumberOfDigit(Integer number) {
+        // Time is O(N) space is O(1)
        String value = String.valueOf(number.intValue());
        return value.length();
     }

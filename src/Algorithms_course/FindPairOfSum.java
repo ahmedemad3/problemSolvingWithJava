@@ -16,7 +16,7 @@ public class FindPairOfSum {
     }
 
     private static void doFindPairOfSum(Integer[] input, int sum) {
-
+        // Time is O(N) space is O(1)
         int length = input.length;
         List<Integer> list = Arrays.asList(input);
         for (int i = 0; i < length; i++) {

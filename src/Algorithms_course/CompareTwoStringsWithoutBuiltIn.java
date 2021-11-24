@@ -6,7 +6,29 @@ public class CompareTwoStringsWithoutBuiltIn {
 
         String input_1 = "JAVA";
         String input_2 = "JAVk";
-        compareTwoStrings(input_1 , input_2);
+//        compareTwoStrings(input_1 , input_2);
+        compareTwoStringsV2(input_1 , input_2);
+    }
+
+    private static void compareTwoStringsV2(String input_1, String input_2) {
+
+        // time complexity is O(n)  space is O(n)
+        if(input_1.length() != input_2.length())
+            System.out.println("Not Identical");
+
+        int length = input_1.length();
+        boolean equal  = true;
+        for (int i = 0; i < length; i++) {
+            if(input_1.charAt(i) != input_2.charAt(i)){
+                equal = false;
+                break;
+            }
+        }
+
+        if(equal)
+            System.out.println("Identical");
+        else
+            System.out.println("Not Identical");
     }
 
 

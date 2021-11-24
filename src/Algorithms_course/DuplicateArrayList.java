@@ -23,11 +23,11 @@ public class DuplicateArrayList {
     }
 
     private static boolean isArrayListHaveDuplicates(List<Integer> list) {
+
+        // Time is O(N) Space O(n)
         Set<Integer> set = new HashSet<>();
         for (int i = 0; i < list.size(); i++) {
-            if(set.contains(list.get(i))){
-                set.add(list.get(i));
-            }
+            set.add(list.get(i));
         }
         if(set.size() != list.size())
             return true;

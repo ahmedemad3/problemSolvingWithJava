@@ -2,7 +2,7 @@ package Algorithms_course;
 
 public class BalancedBinaryTree {
 
-    //Balanced Binary Tree is valid
+    //Balanced Binary Tree is valid time complexity O(log n) space O(n)
     static class Node{
         int value;
         Node left;

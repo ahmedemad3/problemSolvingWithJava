@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class HeightChecker {
 
+    // https://leetcode.com/problems/height-checker/
     public static void main(String[] args) {
         int[] heights = new int[] {1,1,4,2,1,3};
 
@@ -11,6 +12,8 @@ public class HeightChecker {
     }
 
     private static int heightChecker(int[] heights) {
+
+        //  Time is O(n) Space is O(n)
         int length = heights.length;
         int[] expected = new int[length];
 
