@@ -10,6 +10,8 @@ public class MoveZerosToEndOfArray {
 
     private static void doMoveZerosToEndOfArray(int[] input) {
 
+        // Time is O(N) space is O(N)
+
         int forwardPosition = 0 ;
         int length = input.length;
         int backWordPosition = length - 1;

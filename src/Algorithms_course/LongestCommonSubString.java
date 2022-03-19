@@ -1,8 +1,6 @@
 package Algorithms_course;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class LongestCommonSubString {
@@ -14,9 +12,15 @@ public class LongestCommonSubString {
     }
 
     private static String getLongestCommonSubString(String s1, String s2) {
+
+        // Time is O(n2) space is O(n)
         int length = s1.length();
         // get possible subStrings
         Set<String> set = getPossibleSubStrings(length , s1);
+
+//        set.forEach(s -> {
+//            System.out.println("set : " + s);
+//        });
 
         // check if s2 contains and compare length
         String longest = "";

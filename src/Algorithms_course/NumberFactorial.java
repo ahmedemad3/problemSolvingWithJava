@@ -15,6 +15,7 @@ public class NumberFactorial {
     }
 
     private static void getNumberFactorial(int number) {
+        // time is O(n) space is O(1)
         int res = 1;
         while (number > 1){
             res = res  * (number);

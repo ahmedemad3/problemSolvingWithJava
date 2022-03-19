@@ -10,14 +10,14 @@ public class PrimeNumber {
     }
 
     private static boolean isPrime(int number) {
-        boolean isValid = true;
+        boolean isPrime = true;
         for (int i = 2; i < number; i++) {
            if(number % i == 0){
-               isValid = false;
+               isPrime = false;
                break;
            }
         }
 
-        return isValid;
+        return isPrime;
     }
 }

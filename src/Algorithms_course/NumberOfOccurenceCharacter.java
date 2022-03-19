@@ -16,6 +16,7 @@ public class NumberOfOccurenceCharacter {
     }
 
     private static int getNumberOfOccurenceCharacter2(String input, String character) {
+        // time is O(n) space is O(N)
         int actualLength = input.length();
         String modifiedInput= input.replaceAll(character , "");
         int modifiedLength = modifiedInput.length();

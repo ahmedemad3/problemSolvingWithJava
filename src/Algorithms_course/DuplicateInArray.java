@@ -1,7 +1,9 @@
 package Algorithms_course;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 import java.util.stream.Stream;
 
 public class DuplicateInArray {
@@ -9,7 +11,17 @@ public class DuplicateInArray {
     public static void main(String[] args) {
 
         int[] input = new int[]{ 10 , 1 ,2, 1, 3, 2 , 10 , 11};
-        printDuplicateInArray(input);
+//        printDuplicateInArray(input);
+        printDuplicateInArrayV2(input);
+    }
+
+    private static void printDuplicateInArrayV2(int[] input) {
+        Set<Integer> unique  = new HashSet<>();
+        for (int i = 0; i < input.length; i++) {
+            if(!unique.add(input[i])){
+                System.out.println("duplicate is "+ input[i]);
+            }
+        }
     }
 
     private static void printDuplicateInArray(int[] input) {

@@ -21,8 +21,8 @@ public class MergeArrays {
 
         int length_1 = firstArr.length;
         int length_2 = secondArr.length;
-        if(length_1 + length_2 > length_1)
-            throw new Exception();
+//        if(length_1 + length_2 > length_1)
+//            throw new Exception();
         Arrays.sort(firstArr);
         int position = 0;
         for (int i = 0; i < length_1 ; i++) {

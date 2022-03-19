@@ -9,6 +9,7 @@ public class MaximumDifferenceBetweenElementsInArray {
 
     private static void findMaximumDifferenceBetweenElementsInArray(int[] input) {
 
+        // time is O(N) space O(N)
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;
         int length = input.length;

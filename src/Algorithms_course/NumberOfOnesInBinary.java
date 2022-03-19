@@ -12,6 +12,7 @@ public class NumberOfOnesInBinary {
 
         int count = 0;
         while (number > 0 ){
+            System.out.println("% == " + number % 2);
             count+= number % 2;
             number = number / 2;
         }

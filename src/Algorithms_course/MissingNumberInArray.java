@@ -11,6 +11,8 @@ public class MissingNumberInArray {
 
     private static int findMissingNumberInArray(int size, int[] input) {
 
+        // time is O(n) space is O(N)
+
         // actual sum of array n(n+1) / 2  , expected sum of array
 
         int actual = (size*(size+1))/2;

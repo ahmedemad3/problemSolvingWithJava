@@ -1,5 +1,7 @@
 package Algorithms_course;
 
+import java.util.Arrays;
+
 public class MoveNegativeNumbersToStartOfArray {
 
     public static void main(String[] args) {
@@ -7,9 +9,21 @@ public class MoveNegativeNumbersToStartOfArray {
         int [] input = new int[] {-10 , -20 , 30 , 40 , -50 , 60 , 70};
 
         doMoveNegativeNumbersToStartOfArray(input);
+        doMoveNegativeNumbersToStartOfArrayV2(input);
+    }
+
+    private static void doMoveNegativeNumbersToStartOfArrayV2(int[] input) {
+        int length = input.length;
+        Arrays.sort(input);
+        for (int i = 0; i < length; i++) {
+            System.out.println("V2 : " + input[i]);
+        }
+
     }
 
     private static void doMoveNegativeNumbersToStartOfArray(int[] input) {
+
+        // Time is O(N) space is O(N)
 
         int forwardPosition = 0 ;
         int length = input.length;

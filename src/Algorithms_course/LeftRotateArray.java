@@ -7,10 +7,11 @@ public class LeftRotateArray {
         int[] input = new int[]{10 , 20 , 30 , 40 , 50};
 
 //        shiftArrayToLeftSide(input);
-//        shiftArrayToRightSide(input);
+        shiftArrayToRightSide(input);
     }
 
     private static void shiftArrayToRightSide(int[] input) {
+        // time is O(n) space O(n)
         int length = input.length;
         int temp = input[length - 1];
         for (int i = length-2; i >= 0; i--) {
@@ -25,6 +26,7 @@ public class LeftRotateArray {
 
     private static void shiftArrayToLeftSide(int[] input) {
 
+        // time is O(n) space O(n)
         int temp = input[0];
         int length = input.length;
         for (int i = 1; i < length; i++) {
